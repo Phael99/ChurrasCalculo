@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="512dp">
+
+                <EditText
+                    android:id="@+id/numMen"
+                    android:layout_width="400dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="16dp"
+                    android:duplicateParentState="false"
+                    android:ems="10"
+                    android:hint="Quantidade de homens"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/numSoda"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Quantidade que bebem refrigerante"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/numBeer" />
+
+                <EditText
+                    android:id="@+id/numWomen"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Quantidade de mulheres"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/numMen" />
+
+                <EditText
+                    android:id="@+id/numChildren"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Quantidade de crianças"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/numWomen" />
+
+                <EditText
+                    android:id="@+id/numBeer"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Quantidade que bebem cerveja"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/numChildren" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="289dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Tipos de Carne"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/numSoda" />
+
+                <CheckBox
+                    android:id="@+id/cbChicken"
+                    android:layout_width="172dp"
+                    android:layout_height="47dp"
+                    android:text="Frango"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cbCow" />
+
+                <CheckBox
+                    android:id="@+id/cbSausage"
+                    android:layout_width="172dp"
+                    android:layout_height="47dp"
+                    android:text="Linguiça"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cbChicken"
+                    app:layout_constraintTop_toBottomOf="@+id/cbPork" />
+
+                <CheckBox
+                    android:id="@+id/cbPork"
+                    android:layout_width="172dp"
+                    android:layout_height="47dp"
+                    android:text="Porco"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cbCow"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <CheckBox
+                    android:id="@+id/cbCow"
+                    android:layout_width="172dp"
+                    android:layout_height="47dp"
+                    android:text="Boi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <Button
+                    android:id="@+id/btnCalc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:enabled="false"
+                    android:text="Calcular"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.481"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
